@@ -2,7 +2,7 @@
 
 Pipeline de metagenômica shotgun *genome-resolved* para sistemas de fermentação espontânea/mista — recupera MAGs **bacterianos e fúngicos**, anota funcionalmente, e identifica espécies fúngicas por ANI genômico em vez de homologia de proteína.
 
-Desenvolvido no CCBL (FCFRP-USP), sob supervisão do Prof. Ricardo Roberto da Silva.
+Desenvolvido por Jean C. R. da Silva no CCBL (FCFRP-USP), sob supervisão do Prof. Ricardo Roberto da Silva.
 
 [Read in English](README.md)
 
