@@ -8,11 +8,11 @@ Desenvolvido por Jean C. R. da Silva no CCBL (FCFRP-USP), sob supervisão do Pro
 
 ## Motivação
 
-Pipelines padrão de binning metagenômico (ex. MetaWRAP com CONCOCT/MaxBin2/MetaBAT2) foram desenhados quase exclusivamente para procariontes. Genomas fúngicos — maiores, com íntrons e uso de códons distinto — tendem a ser fragmentados ou descartados no binning. Em bebidas onde a fração fúngica é central (leveduras em Pulque, Kombucha, Lambic), isso produz um ponto cego sistemático: o pipeline nunca recupera um único MAG fúngico, mesmo com DNA presente em abundância.
+Pipelines padrão de binning metagenômico (ex. MetaWRAP com CONCOCT/MaxBin2/MetaBAT2) foram desenhados quase exclusivamente para procariontes. Genomas fúngicos (maiores, com íntrons e uso de códons distinto) tendem a ser fragmentados ou descartados no binning. Em bebidas onde a fração fúngica é central (leveduras em Pulque, Kombucha, cervejas Lambic e outros fermentados), isso produz um ponto cego sistemático: o pipeline não recupera MAG fúngico, mesmo com DNA presente em abundância.
 
 Este repositório implementa e valida uma correção: bifurcação de domínios (Tiara) antes do binning, para que bactérias e fungos sejam processados por ferramentas apropriadas em ramos separados. Validado contra três datasets públicos independentes (Pulque, Kombucha, Lambic — ver abaixo).
 
-Um segundo problema, independente do primeiro, foi encontrado e corrigido durante a validação: identificação taxonômica de MAGs fúngicos por homologia de proteína contra o Swiss-Prot identifica errado leveduras de fermentação sub-representadas nesse banco (ex. *Brettanomyces bruxellensis* praticamente não tem entradas de genoma nuclear no Swiss-Prot). Comparação de ANI genômico (fastANI) contra um pequeno conjunto de genomas de referência resolve isso, sem depender da cobertura de anotação do banco de referência.
+Um segundo problema, independente do primeiro, foi encontrado e corrigido durante a validação: identificação taxonômica de MAGs fúngicos por homologia de proteína contra o Swiss-Prot identifica erroneamente leveduras de fermentação sub-representadas nesse banco (ex. *Brettanomyces bruxellensis* praticamente não tem entradas de genoma nuclear no Swiss-Prot). A comparação de ANI genômico (fastANI) contra um pequeno conjunto de genomas de referência resolve isso, sem depender da cobertura de anotação do banco de referência.
 
 ## Visão geral do pipeline
 
