@@ -109,8 +109,9 @@ Testado contra três datasets públicos independentes de fermentação espontân
 .
 ├── README.md
 ├── README.pt-BR.md
-├── pipeline_hibrido_corrigido.sh       (paired-end)
-├── pipeline_hibrido_singleend.sh       (single-end)
+├── pipelines/
+│   ├── pipeline_hibrido_corrigido.sh       (paired-end)
+│   ├── pipeline_hibrido_singleend.sh       (single-end)
 ├── environments/
 │   ├── env_tiara.yml
 │   ├── env_metaeuk.yml
